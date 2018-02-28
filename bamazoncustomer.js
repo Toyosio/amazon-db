@@ -22,7 +22,7 @@ function printStuff(res) {
 	});
 	for (var i = 0; i < res.length; i++) {
 		table.push([res[i].itemID, res[i].product_name, res[i].department_name, res[i].item_cost, res[i].stock_quantity]);
-	}
+	};
 	console.log(table.toString());
 }
 
@@ -32,7 +32,7 @@ var startBuying = function () {
 		var choice = [];
 		for (var i = 0; i < res.length; i++) {
 			choiceArray.push(res[i].product_name);
-		}
+		};
 		inquirer.prompt([{
 				name: 'item',
 				type: 'input',
